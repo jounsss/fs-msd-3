@@ -1,11 +1,11 @@
 import os
-#import signal
+import signal
 from flask import Flask
 from buzz import generator
 
 app = Flask(__name__)
 
-#signal.signal(signal.SIGINT, lambda s, f: os._exit(0))
+signal.signal(signal.SIGINT, lambda s, f: os._exit(0))
 
 @app.route("/")
 def generate_buzz():
