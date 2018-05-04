@@ -6,4 +6,4 @@ COPY app.py /src
 COPY buzz /src/buzz
 ENV FLASK_APP /src/app.py
 EXPOSE 5000
-CMD flask run --host=0.0.0.0
+CMD python /src/app.py
