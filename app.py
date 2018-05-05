@@ -11,7 +11,9 @@ signal.signal(signal.SIGINT, lambda s, f: os._exit(0))
 def generate_buzz():
     page = '<html><body><h1>'
     page += generator.generate_buzz()
-    page += '</h1></body></html>'
+    page += '</h1>'
+    page += '&copy; jounsss 2018'
+    page += '</body></html>'
     return page
 
 # Bind to PORT if defined, otherwise default to 5000.
