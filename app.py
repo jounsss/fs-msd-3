@@ -12,7 +12,7 @@ def generate_buzz():
     page = '<html><body><h1>'
     page += generator.generate_buzz()
     page += '</h1>'
-    #page += '&copy; jounsss 2018'
+    page += '&copy; jounsss 2018'
     page += '</body></html>'
     return page
 
